@@ -1,0 +1,28 @@
+# bwm-lambda
+bwm-lambda/deploy.sh
+bwm-lambda/re-deploy.sh
+bwm-lambda/node_modules
+bwm-lambda/dist
+
+# rest-api
+rest-api/build
+rest-api/node_modules
+rest-api/.env.prod
+rest-api/dist
+
+# misc
+bwm-lambda/.DS_Store
+bwm-lambda/*.pem
+rest-api/.DS_Store
+rest-api/*.pem
+
+# debug
+bwm-lambda/npm-debug.log*
+bwm-lambda/yarn-debug.log*
+bwm-lambda/yarn-error.log*
+rest-api/npm-debug.log*
+rest-api/yarn-debug.log*
+rest-api/yarn-error.log*
+
+.vscode
+

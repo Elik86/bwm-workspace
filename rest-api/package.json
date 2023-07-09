@@ -1,0 +1,40 @@
+{
+  "name": "rest-api",
+  "version": "0.0.1",
+  "description": "BlueWind Medical Test",
+  "main": "src/app.ts",
+  "devDependencies": {
+    "@types/config": "^3.3.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^16.18.38",
+    "prettier": "^3.0.0",
+    "ts-node": "10.7.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "env-cmd": "^10.1.0",
+    "express": "^4.18.2",
+    "mysql2": "^3.5.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "0.3.17"
+  },
+  "scripts": {
+    "start": "node build/app.js",
+    "dev": "pnpm start:dev",
+    "prod": "pnpm start:prod",
+    "build-dev": "pnpm build:dev",
+    "build-prod": "pnpm build:prod",
+    "start:dev": "env-cmd -f .env ts-node-dev --respawn --transpile-only src/app.ts",
+    "start:prod": "env-cmd -f .env.prod ts-node-dev --respawn --transpile-only src/app.ts",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "build:dev": "env-cmd -f .env tsc -p tsconfig.json && node -r tsconfig-paths/register dist/app.js",
+    "build:prod": "env-cmd -f .env.prod tsc"
+  },
+  "engines": {
+    "node": "18.14.2"
+  }
+}
