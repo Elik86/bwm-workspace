@@ -38,6 +38,7 @@ yarn dev
 ```
 
 API base url - http://bwm-backend-env.eba-ixrmfxsb.us-east-1.elasticbeanstalk.com
+
 API logs - http://bwm-backend-env.eba-ixrmfxsb.us-east-1.elasticbeanstalk.com/api/logs
 
 you can apply filters:
