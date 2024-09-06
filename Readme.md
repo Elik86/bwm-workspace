@@ -3,8 +3,7 @@
 This repository consists of 2 projects:
 
 - Rest API project which can be accessed via:
-  http://bwm-backend-env.eba-ixrmfxsb.us-east-1.elasticbeanstalk.com
-
+  <Link>
 - Lambda function
 
 ## How to run - Rest API
